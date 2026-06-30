@@ -1,0 +1,24 @@
+import pandas as pd
+
+# --- 1. EXTRACT (ดึงข้อมูล) ---
+print("--- Step 1: กำลังอ่านข้อมูลจากไฟล์ ---")
+# Read the CSV file into a DataFrame, limiting to the first 50,000 rows for performance
+df = pd.read_csv('amazon_ecommerce_1M.csv', nrows=50000)
+# Display the shape of the DataFrame
+print(f"DataFrame loaded with {len(df)} rows and {len(df.columns)} columns.")
+
+
+# --- 2. TRANSFORM (ล้างและแปลงข้อมูล) ---
+print("\n--- Step 2: กำลังล้างและแปลงข้อมูล ---")
+# Drop rows with any missing values and create a clean copy of the DataFrame
+df_clean = df.dropna().copy()
+
+# Standardize column names: convert to lowercase and replace spaces with underscores
+df_clean.columns = [col.lower().replace(' ', '_') for col in df_clean.columns]
+print("กำลังบันทึกข้อมูลเป็นไฟล์ใหม่...")
+
+
+# --- 3. LOAD (เซฟออกมาเป็นไฟล์ใหม่ในเครื่องของเราก่อน) ---
+print("--- Step 3: กำลังบันทึกข้อมูล ---")
+# สั่งให้เซฟออกเป็นไฟล์ CSV ตัวใหม่ที่สะอาดแล้ว
+df_clean.to_csv("amazon_clean_50k.csv", index=False)
