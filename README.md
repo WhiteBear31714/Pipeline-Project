@@ -21,7 +21,8 @@ As I continue to learn and build, new pipelines will be systematically added bel
 | # | Project Name | Tech Stack | Key Description |
 |---|---|---|---|
 | 1 | [📦 Amazon Sales ETL Pipeline](./amazon-sales-pipeline) | Python (Pandas), MySQL | Processes high-volume e-commerce raw records down to 50k clean database-ready rows. |
-| 2 | *(Coming Soon...)* | *TBD* | *Future automated ETL or cloud ingestion project.* |
+| 2 | [📊 Real-Time Financial Market Pipeline](./realtime-financial-market-pipeline) | Python (Requests, Pandas), MySQL, SQLAlchemy | Multi-Asset Ingestion Pipeline connecting to live REST API for active market pricing data. | ⏳ Phase 1 Complete (Extracting) |
+| 3 | *(Coming Soon...)* | *TBD* | *Future automated ETL or cloud ingestion project.* | 📅 Planned |
 
 ---
 
