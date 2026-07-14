@@ -11,13 +11,6 @@ Currently, **Phase 1 (Data Extraction)** is complete. The script successfully co
 
 ---
 
-## ⚙️ Pipeline Progress Checklist
-- [x] **Phase 1: Data Extraction (REST API & JSON)**
-- [ ] Phase 2: Data Transformation (Pandas & Ingestion Timestamping)
-- [ ] Phase 3: Data Loading (SQLAlchemy & MySQL Integration)
-
----
-
 ## 🛠️ Tech Stack & Skills (Current Phase)
 * **Data Extraction:** Python Requests Library
 * **API Protocol:** REST API Integration
